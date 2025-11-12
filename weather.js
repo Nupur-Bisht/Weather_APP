@@ -9,7 +9,7 @@ const Ntime = document.getElementById("time");
       return await promise.json()
 }
 button.addEventListener("click",async ()=>{
-      // console.log(input.value);
+   
 
        const value = input.value;
        const result = await getData(value);
@@ -19,3 +19,4 @@ button.addEventListener("click",async ()=>{
        console.log(result);
 
 });
+
