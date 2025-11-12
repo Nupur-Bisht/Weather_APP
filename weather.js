@@ -5,7 +5,7 @@ const Ncity =document.getElementById("city");
 const Ntemp =document.getElementById("temp");
 const Ntime = document.getElementById("time");
  async function getData(Ncity){
-      const promise = await  fetch(`http://api.weatherapi.com/v1/current.json?key=0b43e8c35011424fab145203252609&q=${Ncity}&aqi=no`);
+      const promise = await  fetch(`http://api.weatherapi.com/v1/current.json?key=YOUR_API_KEY&q=${Ncity}&aqi=no`);
       return await promise.json()
 }
 button.addEventListener("click",async ()=>{
@@ -17,4 +17,5 @@ button.addEventListener("click",async ()=>{
        Ntime.innerText=result.location.localtime;
        Ntemp.innerText=result.current.temp_c + "°C";
        console.log(result);
+
 });
