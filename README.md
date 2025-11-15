@@ -1,5 +1,5 @@
 # Weather_APP
-Weather App (HTML, CSS, JavaScript)
+Weather App (HTML & JavaScript)
 A simple web application that fetches real-time weather data from WeatherAPI using the Fetch API.
 Features:
  Get live weather details for any city
